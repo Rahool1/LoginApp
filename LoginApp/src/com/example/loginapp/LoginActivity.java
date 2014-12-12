@@ -95,7 +95,7 @@ public class LoginActivity extends Activity implements ReturnFromMyTask{
 
 	@Override
 	public void timeToReturn(JSONObject response) {
-		Log.d("Login",""+response);
+		CustomLog.d(""+response);
 		try {
 			JSONObject responseObject = (JSONObject) ((JSONArray)response.get("body")).get(0);
 			boolean status =  (Boolean) responseObject.get("status");

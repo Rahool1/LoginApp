@@ -3,7 +3,7 @@ package com.example.utilities;
 import android.util.Log;
 
 public class CustomLog {
-	static String tag = "BlueRocket";
+	static String tag = "EduTechLabs";
 	String msg = "";
 
 	public static void d(String msg) {

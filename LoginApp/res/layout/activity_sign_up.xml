@@ -6,15 +6,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".SignUpActivity" >
+    tools:context=".SignUpActivity"
+    android:background="@drawable/back" >
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyStyle2"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/user_email"
         android:ems="10"
         android:hint="Enter user name" >
 
@@ -23,45 +26,53 @@
 
     <EditText
         android:id="@+id/user_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyStyle2"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/user_name"
+        android:layout_above="@+id/user_password"
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/user_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyStyle2"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/user_email"
+        android:layout_above="@+id/confirm_password"
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/confirm_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyStyle2"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="10dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/user_password"
+        android:layout_above="@id/signup"
         android:ems="10"
         android:hint="Confirm Password "
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/confirm_password"
+        style="@style/MyStyle2"
+        android:background="@drawable/bg_button"
+        android:layout_alignLeft="@+id/confirm_password"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/confirm_password"
+        android:layout_marginBottom="75dp"
         android:text="Sign Up"
-        android:textSize="12dp" />
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
 
 </RelativeLayout>
